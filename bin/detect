@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+BUILD_DIR=$1
+
+echo "Typescript Buildpack"
+echo "Checking for the existence of tsc"
+PATH="$BUILD_DIR/vendor/node/bin:$BUILD_DIR/bin:$BUILD_DIR/node_modules/.bin:$PATH" which tsc 1>/dev/null 2>&1
+exit 0
