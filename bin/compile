@@ -6,6 +6,6 @@ CACHE_DIR=$2
 
 cd $BUILD_DIR
 
-echo "-----> Compiling all typescript files at $TS_ROOT"
+echo "-----> Compiling all typescript files in project"
 PATH="$BUILD_DIR/vendor/node/bin:$BUILD_DIR/bin:$BUILD_DIR/node_modules/.bin:$PATH" typings install
 PATH="$BUILD_DIR/vendor/node/bin:$BUILD_DIR/bin:$BUILD_DIR/node_modules/.bin:$PATH" tsc
